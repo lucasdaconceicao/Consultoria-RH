@@ -12,3 +12,17 @@ C:\Users\lucass\Documents\Visual Studio 2015\Projects\cadastroEmpresa\cadastroEm
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\cadastroEmpresa\cadastroEmpresa\bin\Debug\MySql.Data.xml
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\cadastroEmpresa\cadastroEmpresa\bin\Debug\Gerenciamento_Biblioteca.exe
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\cadastroEmpresa\cadastroEmpresa\bin\Debug\Gerenciamento_Biblioteca.pdb
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\cadastroEmpresa.exe.config
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.exe
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.pdb
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.CadastroFuncionario.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.Tela_Principal.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.Properties.Resources.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.csproj.GenerateResource.Cache
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\cadastroEmpresa.exe
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\cadastroEmpresa.pdb
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\MySql.Data.dll
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\MySql.Data.xml
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\Tela_login.dll
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\Tela_login.pdb
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.csprojResolveAssemblyReference.cache

@@ -14,18 +14,17 @@ namespace cadastroEmpresa
 {
     public partial class CadastroFuncionario : Form
     {
-        private string Stringconexao;
-
         public CadastroFuncionario()
         {
             InitializeComponent();
-            LerStringConexao();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            string stringConexao = "Server=localhost;Port=3306;Database=EMPRESA;Uid=administrator;Pwd=1234;";
+
             //conexao com o banco de dados
-            MySqlConnection conn = new MySqlConnection(this.Stringconexao);
+            MySqlConnection conn = new MySqlConnection(stringConexao);
             try
             {
                 Funcionarios funcionario = new Funcionarios();
@@ -110,16 +109,6 @@ namespace cadastroEmpresa
             txtCarteiraTrabalho.Clear();
             rbM.Checked = false;
             rbF.Checked = false;
-        }
-
-        private void LerStringConexao()
-        {
-            //caminho dos dados da string de conexao
-            string caminhoStringConexao = Application.StartupPath + "/stringConexao.txt";
-            StreamReader reader = new StreamReader(caminhoStringConexao);
-            //Lendo o arquivo de texto com os dados de login
-            string linha = reader.ReadLine();
-            this.Stringconexao = linha;
         }
 
         private void txtIdade_KeyPress(object sender, KeyPressEventArgs e)
