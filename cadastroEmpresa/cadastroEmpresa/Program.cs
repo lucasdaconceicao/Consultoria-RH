@@ -25,8 +25,8 @@ namespace cadastroEmpresa
                 //Chamar o login antes de iniciar a aplicação
                 Frm_Login fLogin = new Frm_Login();
                 fLogin.ShowDialog();
-
-                Application.Run(new Tela_Principal());
+         
+              Application.Run(new Tela_Principal());
             }
             catch (Exception ex)
             {

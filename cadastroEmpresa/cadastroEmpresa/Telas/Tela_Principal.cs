@@ -29,7 +29,36 @@ namespace cadastroEmpresa
         {
             CadastroFuncionario tela = new CadastroFuncionario();
             tela.ShowDialog();
-            
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaFuncionario tela = new ConsultaFuncionario();
+            tela.ShowDialog();
+        }
+
+        private void cadastrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CadastroUsuario tela = new CadastroUsuario();
+            tela.ShowDialog();
+        }
+
+        private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaUsuario tela = new ConsultaUsuario();
+            tela.ShowDialog();
+        }
+
+        private void cadastrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Cadastro_Departamento tela = new Cadastro_Departamento();
+            tela.ShowDialog();
+        }
+
+        private void visualizarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consulta_Departamento tela = new Consulta_Departamento();
+            tela.ShowDialog();
         }
     }
 }

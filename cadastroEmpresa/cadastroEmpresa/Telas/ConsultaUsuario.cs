@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace cadastroEmpresa
 {
-    public partial class ConsultaFuncionario : Form
+    public partial class ConsultaUsuario : Form
     {
-
         string stringConexao = "Server=localhost;Port=3306;Database=EMPRESA;Uid=administrator;Pwd=1234;";
-        public ConsultaFuncionario()
+
+        public ConsultaUsuario()
         {
             InitializeComponent();
             btnExcluir.Enabled = false;
@@ -33,20 +33,17 @@ namespace cadastroEmpresa
                     MessageBox.Show("O campo para busca nao pode ser vazio!");
                     return;
                 }
-
                 //abrindo a conexao com o bd
                 conn.Open();
 
                 //Criando um objeto Reader;
                 MySqlDataReader MysqlReader = null;
-
                 if (conn.State == ConnectionState.Open)
                 {
                     //consulta no bd
                     MySqlCommand comando = conn.CreateCommand();
-                    string consulta = "SELECT * FROM FUNCIONARIOS WHERE NOME_FUNCIONARIO LIKE'%" + txtNomeBusca.Text + "%'";
+                    string consulta = "SELECT * FROM USUARIOS WHERE LOGIN_USUARIO LIKE '%" + txtNomeBusca.Text + "%'";
                     comando.CommandText = consulta;
-
                     //retornando os dados da query
                     MysqlReader = comando.ExecuteReader();
 
@@ -57,9 +54,8 @@ namespace cadastroEmpresa
                         txtNomeBusca.Clear();
                         return;
                     }
-
                     //limpar linhas grid
-                    dgvFuncionario.Rows.Clear();
+                    dgvUsuarios.Rows.Clear();
                     //Percorrendo a consulta e adicionando os valores em cada linha
                     while (MysqlReader.Read())
                     {
@@ -68,7 +64,7 @@ namespace cadastroEmpresa
                         {
                             valores[i] = MysqlReader.GetValue(i);
                         }
-                        dgvFuncionario.Rows.Add(valores);
+                        dgvUsuarios.Rows.Add(valores);
                     }
                 }
                 txtNomeBusca.Clear();
@@ -76,6 +72,7 @@ namespace cadastroEmpresa
                 btnExcluir.Enabled = true;
 
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:. " + ex.Message);
@@ -85,33 +82,41 @@ namespace cadastroEmpresa
                 //fechando a conexao com o banco de dados
                 conn.Close();
             }
+
         }
 
-        private void btnExcluir_Click(object sender, EventArgs e)
+
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //conexao com o banco de dados
+            this.Dispose();
+        }
+
+        private void btnExcluir_Click_1(object sender, EventArgs e)
+        {
+            //conexao com o banco de dados 
             MySqlConnection conn = new MySqlConnection(this.stringConexao);
             try
             {
-                int codigo = Convert.ToInt32(dgvFuncionario.CurrentRow.Cells[0].Value.ToString());
+                int codigo = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells[0].Value.ToString());
                 //abrindo a conexao com o bd
                 conn.Open();
 
                 if (conn.State == ConnectionState.Open)
                 {
                     MySqlCommand comando = conn.CreateCommand();
-                    string consulta = "DELETE FROM FUNCIONARIOS WHERE ID_FUNCIONARIO=" + codigo + "";
+                    string consulta = "DELETE FROM USUARIOS WHERE ID_USUARIO=" + codigo + "";
                     comando.CommandText = consulta;
-
                     //se executo o comando com sucesso
                     if (comando.ExecuteNonQuery() > 0)
                     {
-                        MessageBox.Show("Funcionario excluido com sucesso!");
-                        dgvFuncionario.Rows.Clear();
+                        MessageBox.Show("Usuario excluido com sucesso!");
+                        dgvUsuarios.Rows.Clear();
                         btnExcluir.Enabled = false;
                     }
                 }
+
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:. " + ex.Message);
@@ -122,10 +127,6 @@ namespace cadastroEmpresa
                 conn.Close();
             }
         }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
     }
 }
+    

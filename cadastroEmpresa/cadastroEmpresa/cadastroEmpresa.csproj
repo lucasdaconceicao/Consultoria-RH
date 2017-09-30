@@ -51,6 +51,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Telas\Consulta_Departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Consulta_Departamento.Designer.cs">
+      <DependentUpon>Consulta_Departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Cadastro Departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Cadastro Departamento.Designer.cs">
+      <DependentUpon>Cadastro Departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Departamentos.cs" />
+    <Compile Include="Telas\ConsultaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\ConsultaUsuario.Designer.cs">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroUsuario.Designer.cs">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="Telas\ConsultaFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +98,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Telas\Consulta_Departamento.resx">
+      <DependentUpon>Consulta_Departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Cadastro Departamento.resx">
+      <DependentUpon>Cadastro Departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\ConsultaUsuario.resx">
+      <DependentUpon>ConsultaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroUsuario.resx">
+      <DependentUpon>CadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastroFuncionario.resx">
       <DependentUpon>CadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>

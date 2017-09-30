@@ -77,6 +77,7 @@
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.alterarToolStripMenuItem.Text = "Visualizar";
+            this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
             // 
             // usuarioToolStripMenuItem
             // 
@@ -94,6 +95,7 @@
             this.cadastrarToolStripMenuItem1.Name = "cadastrarToolStripMenuItem1";
             this.cadastrarToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.cadastrarToolStripMenuItem1.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem1.Click += new System.EventHandler(this.cadastrarToolStripMenuItem1_Click);
             // 
             // visualizarToolStripMenuItem
             // 
@@ -101,6 +103,7 @@
             this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
             this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.visualizarToolStripMenuItem.Text = "Visualizar";
+            this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
             // 
             // departamentoToolStripMenuItem
             // 
@@ -117,18 +120,21 @@
             this.cadastrarToolStripMenuItem2.Name = "cadastrarToolStripMenuItem2";
             this.cadastrarToolStripMenuItem2.Size = new System.Drawing.Size(152, 24);
             this.cadastrarToolStripMenuItem2.Text = "Cadastrar";
+            this.cadastrarToolStripMenuItem2.Click += new System.EventHandler(this.cadastrarToolStripMenuItem2_Click);
             // 
             // visualizarToolStripMenuItem1
             // 
             this.visualizarToolStripMenuItem1.Name = "visualizarToolStripMenuItem1";
             this.visualizarToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
             this.visualizarToolStripMenuItem1.Text = "Visualizar";
+            this.visualizarToolStripMenuItem1.Click += new System.EventHandler(this.visualizarToolStripMenuItem1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.BackColor = System.Drawing.Color.LightGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(14, 385);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 20);

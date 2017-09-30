@@ -26,3 +26,8 @@ C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmp
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\Tela_login.dll
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\bin\Debug\Tela_login.pdb
 C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.csprojResolveAssemblyReference.cache
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.ConsultaFuncionario.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.Cadastrousuario.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.Cadastro_Departamento.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.Consulta_Departamento.resources
+C:\Users\lucass\Documents\Visual Studio 2015\Projects\Consultoria-RH\cadastroEmpresa\cadastroEmpresa\obj\Debug\cadastroEmpresa.ConsultaUsuario.resources

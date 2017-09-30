@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace cadastroEmpresa
 {
-    public partial class ConsultaFuncionario : Form
+    public partial class Consulta_Departamento : Form
     {
-
         string stringConexao = "Server=localhost;Port=3306;Database=EMPRESA;Uid=administrator;Pwd=1234;";
-        public ConsultaFuncionario()
+
+        public Consulta_Departamento()
         {
             InitializeComponent();
             btnExcluir.Enabled = false;
@@ -33,7 +33,6 @@ namespace cadastroEmpresa
                     MessageBox.Show("O campo para busca nao pode ser vazio!");
                     return;
                 }
-
                 //abrindo a conexao com o bd
                 conn.Open();
 
@@ -44,7 +43,7 @@ namespace cadastroEmpresa
                 {
                     //consulta no bd
                     MySqlCommand comando = conn.CreateCommand();
-                    string consulta = "SELECT * FROM FUNCIONARIOS WHERE NOME_FUNCIONARIO LIKE'%" + txtNomeBusca.Text + "%'";
+                    string consulta = "SELECT * FROM DEPARTAMENTO WHERE NOME_DEPARTAMENTO LIKE'%" + txtNomeBusca.Text + "%'";
                     comando.CommandText = consulta;
 
                     //retornando os dados da query
@@ -59,7 +58,7 @@ namespace cadastroEmpresa
                     }
 
                     //limpar linhas grid
-                    dgvFuncionario.Rows.Clear();
+                    dgvDepartamento.Rows.Clear();
                     //Percorrendo a consulta e adicionando os valores em cada linha
                     while (MysqlReader.Read())
                     {
@@ -68,14 +67,14 @@ namespace cadastroEmpresa
                         {
                             valores[i] = MysqlReader.GetValue(i);
                         }
-                        dgvFuncionario.Rows.Add(valores);
+                        dgvDepartamento.Rows.Add(valores);
                     }
                 }
                 txtNomeBusca.Clear();
 
                 btnExcluir.Enabled = true;
-
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:. " + ex.Message);
@@ -93,25 +92,26 @@ namespace cadastroEmpresa
             MySqlConnection conn = new MySqlConnection(this.stringConexao);
             try
             {
-                int codigo = Convert.ToInt32(dgvFuncionario.CurrentRow.Cells[0].Value.ToString());
+                int codigo = Convert.ToInt32(dgvDepartamento.CurrentRow.Cells[0].Value.ToString());
                 //abrindo a conexao com o bd
                 conn.Open();
 
                 if (conn.State == ConnectionState.Open)
                 {
                     MySqlCommand comando = conn.CreateCommand();
-                    string consulta = "DELETE FROM FUNCIONARIOS WHERE ID_FUNCIONARIO=" + codigo + "";
+                    string consulta = "DELETE FROM DEPARTAMENTO WHERE ID_DEPARTAMENTO=" + codigo + "";
                     comando.CommandText = consulta;
 
                     //se executo o comando com sucesso
                     if (comando.ExecuteNonQuery() > 0)
                     {
-                        MessageBox.Show("Funcionario excluido com sucesso!");
-                        dgvFuncionario.Rows.Clear();
+                        MessageBox.Show("Departamento excluido com sucesso!");
+                        dgvDepartamento.Rows.Clear();
                         btnExcluir.Enabled = false;
                     }
                 }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show("Erro:. " + ex.Message);
